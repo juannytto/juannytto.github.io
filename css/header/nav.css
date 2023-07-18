@@ -1,0 +1,41 @@
+﻿.menu {
+    background-color: #0b090a;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+    .menu a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        margin-left:10px;
+        text-decoration: none;
+    }
+
+        .menu a:hover {
+            background-color: #777;
+        }
+@media screen and (min-width:660px){
+    .menu a:nth-child(1) {
+        background-image: url("../../img/amogus_logo.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: rgba(11, 9, 10,0);
+        display: inline-block;
+        text-decoration: none;
+        padding: 20px;
+        position:absolute;
+        left: 0;
+        }
+}
+@media screen and (max-width:659px){
+    .menu a:nth-child(1) {
+        display: none;
+        }
+}
+    

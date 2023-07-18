@@ -1,0 +1,32 @@
+@import "nav.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    margin: auto;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8em;
+    background-image: url("../../img/header_background.png");
+    background-size: contain;
+}
+
+    header > h1 {
+        margin: 0%;
+        color: aliceblue;
+        text-align: center;
+        font-size: 5em;
+        font-family: montserrat;
+    }
+
+    header p {
+        margin: 0%;
+        color: aliceblue;
+        text-align: center;
+        font-size: medium;
+        font-family: montserrat;
+    }

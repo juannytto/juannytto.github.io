@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="StyleSheet" href="../css/category/style.css" type="text/css">
+    <script src="../js/productObject.js"></script>
+</head>
+
+<body>
+    <div id="productsWrapper">
+        <div id="productsHeader">
+            <p class="headerParagraphs"><a>x</a> artiles trouvés</p>
+            <button class="sortButton">Trier</button>
+        </div>
+        <div id="productsList">
+            
+        </div>
+
+        <h1 style = "color:green;" > 
+            GeeksForGeeks 
+        </h1>
+          
+        <p id = "GFG_UP" style = 
+            "font-size: 15px; font-weight: bold;">
+        </p>
+          
+        <button onclick = "GFG_Fun()">
+            Add Parameter
+        </button>
+        <button onclick = "GFG_Fun2()">
+            Add Parameter
+        </button>
+          
+        <p id = "GFG_DOWN" style =
+            "color:green; font-size: 20px; font-weight: bold;">
+        </p>
+          
+        <script>
+            var up = document.getElementById('GFG_UP');
+            var url = new URL("https://www.geeksforgeeks.org");
+            up.innerHTML = url;
+            var down = document.getElementById('GFG_DOWN');
+              
+            function GFG_Fun() {
+                url.searchParams.set('param_1', 18);
+                url.searchParams.set('param_2', 1);
+                down.innerHTML = url;
+            }
+            function GFG_Fun2() {
+                url.searchParams.set('param_1', 2);
+                url.searchParams.set('param_2', 55);
+                down.innerHTML = url;
+            }
+        </script> 
+    </div>
+</body>
+
+</html>

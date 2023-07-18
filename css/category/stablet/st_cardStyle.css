@@ -1,0 +1,110 @@
+/*-----TEMPLATE BY Samuel Garcia - Simple Product Card UI Design------*/
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+.productItem * {
+  margin: 0;
+  padding: 0;
+  font-family: "Istok Web", sans-serif;
+}
+
+
+.productItem {
+  position: relative;
+  width: 320px;
+  height: 310px;
+  flex-basis: 49%;
+  max-width: 49%;
+  background: #191919;
+  color: aliceblue;
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 5px 5px 10px #888888;
+}
+
+.productItem::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.productItem:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.productItem::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.productItem .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1px;
+  z-index: 1;
+}
+
+.productItem .contentBox {
+  position: relative;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.productItem .contentBox h3 {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.productItem .contentBox .price {
+  font-size: 19px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.productItem .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 5px 25px;
+  margin-top: 7px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.productItem:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 175px;
+  width: auto;
+}

@@ -1,0 +1,202 @@
+@import "st_cardStyle.css";
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageWrapper {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1280px;
+    margin-bottom: 30px;
+}
+
+.bodyWrapper {
+    /*background-color:azure;*/
+    display: grid;
+    justify-items: center;
+}
+
+/*------------CATEGORY NAME (top)----------*/
+.categoryName {display: none;}
+/*------------ CATEGORY LIST (left side) ----------------*/
+#categoryWrapper {
+    /*background-color: violet;*/
+    width: 90%;
+    height: fit-content;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+
+
+#categoryList {
+    /*background-color: rgb(224, 113, 142);*/
+    display: grid;
+    justify-content: center;
+}
+    #categoryList p {
+        display: none;
+    }
+
+#listBody {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    overflow-x:auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    align-items: flex-end;
+}
+
+ul{
+    list-style-type: none;
+    font-family:'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    height: 100%;
+    /* identical to box height */
+    display: flex;
+    align-items:center;
+    text-align: center;
+}
+
+li {
+    
+box-sizing: border-box;
+width: 6.5em;
+height: auto;
+left: calc(50% - 200px/2 - 324px);
+top: calc(50% - 100px/2 + 61.85px);
+background: #fff;
+border: 1px solid #000000;
+}
+li:hover {
+    border: 4px solid #000000;
+    }
+
+li > a {
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    height: 100%;
+    font-style: normal;
+    /*font-weight: 400;*/
+    font-size: 2.2vw;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    color: #000000;
+}
+
+
+
+
+/*------------ PRODUCTS (right side) ----------------*/
+    /*------------HEADER---------------*/
+#nbArticles { color: #b3b9e8;}
+
+#productsHeader {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /*margin-top: 5em;*/
+    margin-bottom: 0.5em;
+    /*background-color:rgb(39, 113, 37);*/
+    width: 28rem;
+}   
+
+.headerParagraphs{
+    font-size: large;
+    color: #afb0b1;
+    font-family: 'Open Sans', sans-serif;
+}
+.headerParagraphs a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Button style originaly from uiverse.io */
+    .sortButton {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 0px solid #4f4f4f;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: black;
+    z-index: 1;
+    background-color: #dee2ff;
+   }
+   
+   .sortButton:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .sortButton:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #c77dff;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .sortButton:hover {
+    color: #ffffff;
+    border: 1px solid #c77dff;
+   }
+   
+   .sortButton:hover:before {
+    top: -35%;
+    background-color: #c77dff;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .sortButton:hover:after {
+    top: -45%;
+    background-color: #c77dff;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+
+    /*------------LIST---------------*/
+/*
+#productsWrapper {
+    background-color:blueviolet;
+}
+*/
+
+#productsList {
+    /*background-color:aquamarine;*/
+    display: flex; /*automatically adapts (to different screen sizes*/
+    flex-wrap: wrap;
+    text-align:center;
+    width: 28em;
+    height: fit-content;
+    gap:3px;
+    margin-bottom: 50px;
+}
+/*product Item is in external css file*/
