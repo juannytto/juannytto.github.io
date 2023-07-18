@@ -22,12 +22,6 @@ main{
     margin-bottom: 25px;
 }
 
-.bodyWrapper {
-    /*background-color:azure;*/
-    display: grid;
-    justify-items: center;
-}
-
 /*------------CATEGORY NAME (top)----------*/
 .categoryName {display: none;}
 .categoryName h1 {
@@ -53,66 +47,42 @@ main{
 
 #categoryList {
     /*background-color: rgb(224, 113, 142);*/
-    display: grid;
-    justify-content: flex-start;
-    width: 100%;
-}
-    #categoryList p {
-        display: none;
-    }
-
-#listBody {
     display: flex;
-    flex-direction:row;
-    width: 95%;
-    justify-self: center;
-    overflow: auto;
-    position: relative;
-    
+    justify-content: end;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul{
     list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-    height: 100%;
-    /* identical to box height */
-    display: flex;
-    align-items:center;
-    text-align: center;
-    white-space:nowrap;
-    padding-left: 0;
-    
+    font-family: Tahoma, Verdana, sans-serif;
+    font-weight:700;
+    font-size: 0.875rem;
+    line-height: 2.25rem;
+    margin-right: 40px;
+    color: #0066ff;
+    width: 90%;
 }
 
-li {
-    
-box-sizing: border-box;
-width: 33%;
-height: auto;
-left: calc(50% - 200px/2 - 324px);
-top: calc(50% - 100px/2 + 61.85px);
-background: #fff;
-border: 0.5px solid #717070;
-border-radius: 2px;
+ul p{
+    display: none;
 }
-li:hover a{
-    color:#0c0d22;
-    }
+
+li{
+    text-align: center;
+    border: solid #ddd;
+    border-radius: 10px;
+    background-color: #191919;
+    color: #ddd;
+}
 
 li > a {
+    color: #ddd;
     text-decoration: none;
-    height: 100%;
-    font-style: normal;
-    /*font-weight: 400;*/
-    font-size: 16px;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;
-    display: inline-block;
-    color: #727374;
+}
+li > a:hover {
+    text-decoration: underline;
 }
 
 /*------------ PRODUCTS (right side) ----------------*/
@@ -149,11 +119,13 @@ li > a {
 #productsList {
     /*background-color:aquamarine;*/
     display: flex; /*automatically adapts (to different screen sizes*/
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     text-align:center;
-    width: 21em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    align-items: center;
     height: fit-content;
-    gap:3px;
-    margin-bottom: 50px;
 }
 /*product Item is in external css file*/

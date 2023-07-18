@@ -29,6 +29,23 @@ a {
 main {
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4%;
+    margin:auto auto;
+}
+.left {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+iframe{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
 form {
@@ -61,3 +78,6 @@ input[type="submit"] {
     color: white;
     padding: 10px 20px;
 }
+
+
+

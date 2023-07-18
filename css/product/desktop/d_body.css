@@ -18,13 +18,13 @@ main * {
 
 .bodyWrapper {
     display: grid;
-    grid-template-columns: 40% 45%;
+    grid-template-columns: 40% 55%;
     justify-items: center;
 }
 
 /*--------PRODUCT INFOS----------*/
 .infoWrapper{
-    display: grid;      grid-template-columns: auto auto;
+    display: grid;      grid-template-columns: auto auto; grid-gap: 10%;
 }
 
 .infoWrapper div span {

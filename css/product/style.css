@@ -1,7 +1,13 @@
-@import "desktop/desktop.css" screen and (min-width: 1150px); /*min widht is 1150*/
-@import "tablet/tablet.css" screen and (min-width: 744px) and (max-width: 1149px);
-@import "stablet/stablet.css" screen and (min-width: 431px) and (max-width: 743px);
-@import "mobile/mobile.css" screen and (min-width: 320px) and (max-width: 430px);
+@import "desktop/desktop.css" screen and (min-width: 800px);
+@import "mobile/mobile.css" screen and (min-width: 320px) and (max-width: 800px);
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
 /*This is the button that redirects to the top of the page*/
 #myBtn {
     display: none; /* Hidden by default */
@@ -22,3 +28,7 @@
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
+
+.pageWrapper{
+  margin-bottom: 100px;
+}

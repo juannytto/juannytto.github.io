@@ -10,15 +10,17 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 4em;
+    height: 7em;
     background-image: url("../../img/header_background.png");
     background-size: contain;
 }
-.menu{
+
+#navMenu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2%;
+    justify-content: space-evenly;
 }
 
     header > h1 {

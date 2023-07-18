@@ -7,6 +7,19 @@
   font-family: "Istok Web", sans-serif;
 }
 
+.productItem {
+    border: solid #ddd;
+
+  height: auto;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.productItem:hover {
+  z-index: 2;
+  transform: scale(1.1);
+  border-color: #b64809;
+}
 
 .productItem {
   position: relative;
@@ -16,9 +29,7 @@
   max-width: 33%;
   background: #191919;
   color: aliceblue;
-  border-radius: 9px;
   overflow: hidden;
-  border: 1px solid #ddd;
   box-shadow: 5px 5px 10px #888888;
 }
 
